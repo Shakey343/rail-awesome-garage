@@ -1,6 +1,6 @@
 class Review < ApplicationRecord
   belongs_to :car
 
-  validate :comment, presence: true
-  validate :rating, presence: true, numericality: { only_integer: true }
+  validates :comment, presence: true
+  validates :rating, presence: true, numericality: { only_integer: true }
 end
